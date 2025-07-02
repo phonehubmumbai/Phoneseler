@@ -182,16 +182,19 @@ footer {
 .whatsapp-button {
   background: #25D366;
   color: white;
-  padding: 12px 18px;
+  padding: 16px 28px; /* Bigger size */
+  font-size: 1.1rem;   /* Bigger text */
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 .whatsapp-button i {
-  margin-right: 8px;
+  font-size: 1.3rem; /* Bigger icon */
 }
-
 /* === Dark Mode === */
 body.dark {
   background-color: #121212;
