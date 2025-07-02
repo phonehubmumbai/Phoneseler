@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phone Hub - Mobile Store Mumbai</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <section id="hero">
+    <div class="slider">
+      <div class="slide active">Hot Deals on iPhones</div>
+      <div class="slide">2 Days Delivery All Over India</div>
+      <div class="slide">Book with Minimum Advance</div>
+    </div>
+  </section>
+
+  <div class="top-bar">
+    <button onclick="toggleLanguage()">🌐 हिंदी / English</button>
+    <button onclick="toggleDarkMode()">🌓 Dark Mode</button>
+  </div>
+
+  <section id="products">
+    <h2 class="section-title">Our Phones</h2>
+    <div class="filters">
+      <button onclick="filterBrand('all')">All</button>
+      <button onclick="filterBrand('iphone')">iPhone</button>
+      <button onclick="filterBrand('vivo')">Vivo</button>
+      <button onclick="filterBrand('motorola')">Motorola</button>
+    </div>
+    <div class="product-grid">
+      <div class="product-card iphone">
+        <h3>iPhone 13</h3>
+        <p>₹8,000 <span class="advance">Advance ₹2,000</span></p>
+      </div>
+      <div class="product-card iphone">
+        <h3>iPhone 15</h3>
+        <p>₹16,000 <span class="advance">Advance ₹4,000</span></p>
+      </div>
+      <div class="product-card vivo">
+        <h3>Vivo V40 Pro</h3>
+        <p>₹14,000 <span class="advance">Advance ₹4,000</span></p>
+      </div>
+      <div class="product-card motorola">
+        <h3>Motorola Edge 60</h3>
+        <p>₹10,000 <span class="advance">No Advance</span></p>
+      </div>
+    </div>
+  </section>
+
+  <div id="countdown">Limited Time Offer: <span id="timer"></span></div>
+
+  <section id="booking">
+    <h2>Book Your Phone Now</h2>
+    <form action="https://formsubmit.co/phonehubb625@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="address" placeholder="Your Address" required>
+      <select name="product" required>
+        <option value="iPhone 13">iPhone 13</option>
+        <option value="iPhone 15">iPhone 15</option>
+        <option value="Vivo V40 Pro">Vivo V40 Pro</option>
+        <option value="Motorola Edge 60">Motorola Edge 60</option>
+      </select>
+      <textarea name="message" placeholder="Any message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="trust">
+    <h2>Why People Trust Us</h2>
+    <ul>
+      <li>✅ Genuine Phones Only</li>
+      <li>🚚 2 Days Delivery All Over India</li>
+      <li>🔄 1 Month Replacement & 11 Months Warranty</li>
+      <li>📞 EMI Available – Contact on WhatsApp</li>
+    </ul>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul>
+      <li><strong>Q1:</strong> Delivery Time? <br> <strong>A:</strong> 2 Days All Over India</li>
+      <li><strong>Q2:</strong> Warranty? <br> <strong>A:</strong> 1 Month Replacement + 11 Months Warranty</li>
+      <li><strong>Q3:</strong> EMI Available? <br> <strong>A:</strong> Yes, Contact on WhatsApp</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>📍 Shop No. B35, Lokhandwala Market, Andheri West, Mumbai</p>
+    <p>📞 8875661524 | 📧 phonehubb625@gmail.com</p>
+  </footer>
+
+  <div class="floating-buttons">
+    <a href="https://wa.me/918875661524" class="whatsapp-button" target="_blank">
+      <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+    </a>
+    <div style="margin-top: 12px;"></div>
+  </div>
+</body>
+</html>
