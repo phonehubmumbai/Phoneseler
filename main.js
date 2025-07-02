@@ -14,7 +14,7 @@ setInterval(() => {
 
 // ============ DARK MODE ============
 function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("dark");
 }
 
 // ============ LANGUAGE TOGGLE ============
